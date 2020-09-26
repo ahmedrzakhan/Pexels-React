@@ -1,0 +1,10 @@
+.fontStyle {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.linkStyle {
+  color: #5e5e5e;
+  text-decoration: none;
+  font-weight: 600;
+}
