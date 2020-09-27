@@ -13,6 +13,8 @@ const Nav = styled.div`
   align-items: center;
   color: #fff;
   height: 10px;
+  position: sticky;
+  top: 0;
   background: #000;
 `;
 
