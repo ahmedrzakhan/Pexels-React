@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import styles from "./Navbar.module.css";
+import cStyles from "./../../styles/common.module.css"
 
 const links = [
   {
@@ -31,7 +32,7 @@ const NavTab = () => {
   return (
     <Nav>
       {links.map(({ to, title }) => (
-        <Link className={styles.linkStyle} to={to} key={to}>
+        <Link className={`${styles.linkStyle} ${cStyles.boldFont}`} to={to} key={to}>
           {title}
         </Link>
       ))}

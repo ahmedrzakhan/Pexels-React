@@ -1,3 +1,15 @@
 .greenBackground {
-    background: #05a081;
+  background: #05a081;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.lightFont {
+  font-weight: light;
+}
+
+.boldFont {
+  font-weight: bold;
 }

@@ -1,9 +1,7 @@
 import React from "react";
-
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 import cStyles from "./../../styles/common.module.css";
-
 import styles from "./Navbar.module.css";
 
 const Nav = styled.div`
@@ -43,10 +41,12 @@ const Navbar = () => {
   return (
     <Nav>
       <div>
-        <Flex>
-          <Img src="/pexels.png" alt="pexels" />
-          <Div className={styles.fontStyle}>Pexels</Div>
-        </Flex>
+        <Link className={styles.navLinkStyle} to="/" key="/">
+          <Flex>
+            <Img src="/pexels.png" alt="pexels" />
+            <Div className={styles.fontStyle}>Pexels</Div>
+          </Flex>
+        </Link>
       </div>
       <div>
         <Button className={`${cStyles.greenBackground} ${styles.fontStyle}`}>
