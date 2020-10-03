@@ -5,8 +5,7 @@ import Search from "./searchBox/SearchBox";
 import styles from "./ImageContent.module.css";
 import cStyles from "./../../styles/common.module.css";
 
-const Div = styled.div`
-`;
+const Div = styled.div``;
 
 const Absolute = styled.div`
   position: absolute;
@@ -24,7 +23,7 @@ const ImageContent = (props) => {
         {picture ? (
           <img src="wall.jpg" className={styles.imageStyle} alt="wall" />
         ) : (
-          <video autoPlay>
+          <video autoPlay className={styles.videoStyle}>
             <source src="/videos/waves.mp4" type="video/mp4" />
           </video>
         )}
@@ -35,7 +34,7 @@ const ImageContent = (props) => {
           >
             The best free stock photos & videos shared by talented creators.
           </div>
-        <Search {...props} />
+          <Search {...props} />
         </Absolute>
       </Div>
     </>

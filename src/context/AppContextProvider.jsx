@@ -16,7 +16,7 @@ class AppContextProvider extends Component {
   getPhotos = async () => {
     try {
       const response = await axios.get(
-        "https://api.pexels.com/v1/search?query=lifestyle&per_page=75",
+        "https://api.pexels.com/v1/search?query=animals&per_page=75",
         {
           headers: {
             "Content-Type": "application/json",
@@ -37,7 +37,7 @@ class AppContextProvider extends Component {
   getVideos = async () => {
     try {
       const response = await axios.get(
-        "https://api.pexels.com/videos/search?query=lifestyle&per_page=75",
+        "https://api.pexels.com/videos/search?query=animals&per_page=75",
         {
           headers: {
             "Content-Type": "application/json",

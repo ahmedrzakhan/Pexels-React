@@ -43,7 +43,8 @@ class Search extends Component {
     const { value } = this.state;
     const { history } = this.props;
     if (e.key === "Enter") {
-      history.push(`/search/${value}`);
+      //   history.push(`/search/${value}`);
+      console.log("this", this.props);
     }
   };
 

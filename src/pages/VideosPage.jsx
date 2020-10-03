@@ -2,10 +2,10 @@ import React from 'react'
 
 import Videos from "./../components/videos/Videos";
 
-const VideoPage = () => {
+const VideoPage = (props) => {
     return (
         <div>
-            <Videos />
+            <Videos {...props} />
         </div>
     )
 }

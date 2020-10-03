@@ -1,9 +1,11 @@
 import React from 'react'
+import Search from "./../components/search/Search";
 
-const SearchPage = () => {
+
+const SearchPage = (props) => {
     return (
         <div>
-            SearchPage
+            <Search {...props} />
         </div>
     )
 }
