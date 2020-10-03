@@ -4,6 +4,7 @@ import { AppContext } from "./../context/AppContextProvider";
 import NavTab from "./navbar/NavTab";
 import ImageContent from "./imageContent/ImageContent";
 
+
 const Div = styled.div`
   padding: 30px;
 `;
@@ -23,10 +24,10 @@ const Img = styled.img`
 class Home extends Component {
   render() {
     const { photos: data } = this.context;
+
     return (
       <>
-      <ImageContent />
-      {/* <HomeImage src="wall.jpg" alt="wall" /> */}
+      <ImageContent picture {...this.props} />
       <NavTab />
       <Div>
         <Flex>

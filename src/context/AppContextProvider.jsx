@@ -56,8 +56,8 @@ class AppContextProvider extends Component {
   };
 
   componentDidMount() {
-    this.getPhotos();
-    this.getVideos();
+    // this.getPhotos();
+    // this.getVideos();
   }
 
   render() {
