@@ -62,7 +62,6 @@ class AppContextProvider extends Component {
 
   render() {
     const { photos, videos } = this.state;
-    console.log(this.state);
     return (
       <AppContext.Provider value={{ photos, videos }}>
         {this.props.children}

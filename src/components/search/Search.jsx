@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import RenderPhotos from "./../render/RenderPhotos";
+
 class Search extends Component {
   constructor(props) {
     super(props);
@@ -31,15 +33,14 @@ class Search extends Component {
   };
 
   componentDidMount() {
-    console.log(this.props)
     const { match } = this.props;
     const query = match.params.query;
     // this.getPhotos(query);
   }
 
   render() {
-    console.log("t", this.state);
-    return <div>Search</div>;
+    const { photos: data } = this.state;
+    return <RenderPhotos data={data} />;
   }
 }
 

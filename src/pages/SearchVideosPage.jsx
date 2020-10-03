@@ -1,10 +1,9 @@
 import React from 'react'
 
-const SearchVideosPage = () => {
+import SearchVideos from "./../components/search/SearchVideos";
+const SearchVideosPage = (props) => {
     return (
-        <div>
-            SearchVideosPage
-        </div>
+        <SearchVideos {...props} />
     )
 }
 

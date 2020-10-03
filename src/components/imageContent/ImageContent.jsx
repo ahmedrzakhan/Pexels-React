@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Search from "./searchBox/SearchBox";
+import SearchVideo from "./searchBox/SearchVideoBox";
 import styles from "./ImageContent.module.css";
 import cStyles from "./../../styles/common.module.css";
 
@@ -34,7 +35,7 @@ const ImageContent = (props) => {
           >
             The best free stock photos & videos shared by talented creators.
           </div>
-          <Search {...props} />
+          {picture ? <Search {...props} /> : <SearchVideo {...props} />}
         </Absolute>
       </Div>
     </>

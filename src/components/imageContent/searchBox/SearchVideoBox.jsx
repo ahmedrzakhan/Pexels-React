@@ -24,7 +24,7 @@ const Input = styled.input`
   outline: none;
 `;
 
-class Search extends Component {
+class SearchVideo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +43,7 @@ class Search extends Component {
     const { value } = this.state;
     const { history } = this.props;
     if (e.key === "Enter") {
-        history.push(`/search/${value}`);
+        history.push(`/search/videos/${value}`);
     }
   };
 
@@ -68,4 +68,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default SearchVideo;

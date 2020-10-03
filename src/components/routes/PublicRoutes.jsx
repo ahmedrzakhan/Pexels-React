@@ -13,14 +13,18 @@ const PublicRoutes = () => {
     <Switch>
       <Route exact path="/" render={(props) => <HomePage {...props} />} />
       <Route path="/pages/discover" render={() => <DiscoverPage />} />
-      <Route path="/pages/videos" render={(props) => <VideosPage {...props} />} />
       <Route
+        path="/pages/videos"
+        render={(props) => <VideosPage {...props} />}
+      />
+      <Route
+        exact
         path="/search/:query"
         render={(props) => <SearchPage {...props} />}
       />
       <Route
         path="/search/videos/:query"
-        render={(props) => <SearchVideosPage />}
+        render={(props) => <SearchVideosPage {...props} />}
       />
     </Switch>
   );

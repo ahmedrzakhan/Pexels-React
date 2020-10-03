@@ -9,7 +9,6 @@ class Videos extends Component {
   render(props) {
 
     const { videos: data } = this.context;
-    console.log("data", data);
     return (
       <>
         <ImageContent {...this.props} />
