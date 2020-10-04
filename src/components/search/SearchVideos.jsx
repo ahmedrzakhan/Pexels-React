@@ -37,7 +37,7 @@ class SearchVideos extends Component {
   componentDidMount() {
     const { match } = this.props;
     const query = match.params.query;
-    // this.getVideos(query);
+    this.getVideos(query);
   }
 
   render() {

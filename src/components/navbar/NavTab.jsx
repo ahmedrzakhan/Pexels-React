@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 import styles from "./Navbar.module.css";
@@ -10,15 +10,13 @@ const links = [
     to: { pathname: "/" },
     title: "Welcome",
   },
-  {
-    to: "/pages/discover",
-    title: "Discover",
-
-  },
+  // {
+  //   to: "/pages/discover",
+  //   title: "Discover",
+  // },
   {
     to: "/pages/videos",
     title: "Videos",
-
   },
 ];
 
@@ -34,13 +32,17 @@ const NavTab = () => {
   return (
     <Nav>
       {links.map(({ to, title }) => (
-        <Link
+        <NavLink
+          exact
+          activeStyle={{
+            color: "#0064f9",
+          }}
           className={`${styles.linkStyle} ${cStyles.boldFont}`}
           to={to}
           key={to}
         >
           {title}
-        </Link>
+        </NavLink>
       ))}
     </Nav>
   );

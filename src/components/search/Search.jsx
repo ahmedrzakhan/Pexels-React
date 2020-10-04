@@ -35,7 +35,7 @@ class Search extends Component {
   componentDidMount() {
     const { match } = this.props;
     const query = match.params.query;
-    // this.getPhotos(query);
+    this.getPhotos(query);
   }
 
   render() {
