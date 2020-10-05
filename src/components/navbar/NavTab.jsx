@@ -8,7 +8,7 @@ import cStyles from "./../../styles/common.module.css";
 const links = [
   {
     to: { pathname: "/" },
-    title: "Welcome",
+    title: "Home",
   },
   // {
   //   to: "/pages/discover",

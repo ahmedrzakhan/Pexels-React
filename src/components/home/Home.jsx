@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { AppContext } from "./../context/AppContextProvider";
-import NavTab from "./navbar/NavTab";
-import ImageContent from "./imageContent/ImageContent";
-import RenderPhotos from "./render/RenderPhotos";
+import { AppContext } from "../../context/AppContextProvider";
+import NavTab from "../navbar/NavTab";
+import ImageContent from "../imageContent/ImageContent";
+import RenderPhotos from "../render/RenderPhotos";
 
 
 class Home extends Component {
