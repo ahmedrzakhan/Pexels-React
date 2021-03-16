@@ -6,6 +6,9 @@
 - Html
 - Css
 
+## Live URL
+https://pexels-react.netlify.app/
+
 ## Instructions to run locally
 ```
 git clone https://github.com/ahmedrzakhan/Pexels-React.git
